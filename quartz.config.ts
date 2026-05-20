@@ -9,7 +9,7 @@ import * as Plugin from "./quartz/plugins"
 const config: QuartzConfig = {
   configuration: {
     pageTitle: "मेरो अंतराल || by Aashutosh Dhungana",
-    pageTitleSuffix: "Digital Garden of Aashutosh",
+    pageTitleSuffix: " | Aashutosh's Garden",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
