@@ -8,8 +8,8 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "मेरो अंतराल || by Aashutosh Dhungana",
-    pageTitleSuffix: " | Aashutosh's Garden",
+    pageTitle: "आशुतोषको संग्रह||Aashutosh's Collection",
+    pageTitleSuffix: " | Aashutosh's Collection",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
