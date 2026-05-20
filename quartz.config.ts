@@ -8,15 +8,15 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
-    pageTitleSuffix: "",
+    pageTitle: "मेरो अंतराल || by Aashutosh Dhungana",
+    pageTitleSuffix: "Digital Garden of Aashutosh",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "localhost:8080",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
@@ -29,26 +29,26 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          light: "#F5F4F0", // warm off-white page bg
+          lightgray: "#e2e1e1", // card / sidebar surface
+          gray: "#ada9a2", // borders, dividers
+          darkgray: "#6B6B6B", // muted / secondary text
+          dark: "#1C1C1C", // primary body text
+          secondary: "#A27B5C", // accent — same as dark mode
+          tertiary: "#8A7265", // subtle icons, placeholders
+          highlight: "rgba(162, 123, 92, 0.12)",
+          textHighlight: "#A27B5C55",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          light: "#2C3639", // deepest bg (was #161618)
+          lightgray: "#3F4E4F", // surface / sidebar (was #393639)
+          gray: "#8a7265", // mid-tone dividers (was #646464)
+          darkgray: "#DCD7C9", // secondary text (was #d4d4d4)
+          dark: "#DCD7C9", // primary text (was #ebebec)
+          secondary: "#A27B5C", // accent / links (was #7b97aa)
+          tertiary: "#3F4E4F", // subtle surface alt (was #84a59d)
+          highlight: "rgba(162, 123, 92, 0.15)", // warm sand glow
+          textHighlight: "rgba(44, 54, 57, 0.60)", // forest-toned mark
         },
       },
     },

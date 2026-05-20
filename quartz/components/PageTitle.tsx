@@ -5,10 +5,20 @@ import { i18n } from "../i18n"
 
 const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzComponentProps) => {
   const title = cfg?.pageTitle ?? i18n(cfg.locale).propertyDefaults.title
+  const titleSplits: string[] = []
+  title.split("||").forEach((part, index) => {
+    titleSplits[index] = part.trim()
+  })
   const baseDir = pathToRoot(fileData.slug!)
   return (
     <h2 class={classNames(displayClass, "page-title")}>
-      <a href={baseDir}>{title}</a>
+      <a href={baseDir}>{titleSplits[0]}</a>
+      {titleSplits[1] && (
+        <>
+          <br />
+          <span class="title-subtext"> {titleSplits[1]}</span>
+        </>
+      )}
     </h2>
   )
 }

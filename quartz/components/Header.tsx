@@ -19,4 +19,21 @@ header h1 {
 }
 `
 
-export default (() => Header) satisfies QuartzComponentConstructor
+export default ((children?: QuartzComponent[]) => {
+  if (children) {
+    const HeaderWithChildren: QuartzComponent = (props: QuartzComponentProps) => {
+      return (
+        <Header {...props}>
+          {children.map((Child) => (
+            <Child {...props} />
+          ))}
+        </Header>
+      )
+    }
+    // Forward the CSS styles to the wrapped component
+    HeaderWithChildren.css = Header.css
+    return HeaderWithChildren
+  }
+
+  return Header
+}) satisfies QuartzComponentConstructor

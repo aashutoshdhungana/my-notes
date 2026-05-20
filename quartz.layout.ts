@@ -5,11 +5,28 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  afterBody: [
+    Component.Comments({
+      provider: "giscus",
+      options: {
+        repo: "aashutoshdhungana/my-notes",
+        repoId: "R_kgDOShw9oA",
+        category: "Announcements",
+        categoryId: "DIC_kwDOShw9oM4C9cEo",
+        mapping: "pathname",
+        strict: false,
+        reactionsEnabled: true,
+        inputPosition: "top",
+        lang: "en",
+        themeUrl: "https://raw.githack.com/giscus/giscus/main/styles/themes",
+        darkTheme: "dark_dimmed",
+        lightTheme: "light",
+      },
+    }),
+  ],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      GitHub: "https://github.com/aashutoshdhungana",
     },
   }),
 }
@@ -44,6 +61,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
+    Component.RecentNotes({ title: "Recent Updates" }),
   ],
 }
 

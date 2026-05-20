@@ -97,3 +97,121 @@ main .pagination-loader-container {
 main .gsc-loading-image {
   background-image: url("https://github.githubassets.com/images/mona-loading-default.gif");
 }
+main {
+  /* Syntax */
+  --color-prettylights-syntax-comment: #6B6B6B; /* darkgray */
+  --color-prettylights-syntax-constant: #A27B5C; /* secondary */
+  --color-prettylights-syntax-entity: #8A7265; /* tertiary */
+  --color-prettylights-syntax-storage-modifier-import: #1C1C1C; /* dark */
+  --color-prettylights-syntax-entity-tag: #A27B5C;
+  --color-prettylights-syntax-keyword: #8A7265;
+  --color-prettylights-syntax-string: #A27B5C;
+  --color-prettylights-syntax-variable: #8A7265;
+
+  --color-prettylights-syntax-brackethighlighter-unmatched: #8A7265;
+
+  --color-prettylights-syntax-invalid-illegal-text: #F5F4F0;
+  --color-prettylights-syntax-invalid-illegal-bg: #8A7265;
+
+  --color-prettylights-syntax-carriage-return-text: #F5F4F0;
+  --color-prettylights-syntax-carriage-return-bg: #A27B5C;
+
+  --color-prettylights-syntax-string-regexp: #A27B5C;
+
+  --color-prettylights-syntax-markup-list: #8A7265;
+  --color-prettylights-syntax-markup-heading: #A27B5C;
+  --color-prettylights-syntax-markup-italic: #1C1C1C;
+  --color-prettylights-syntax-markup-bold: #1C1C1C;
+
+  --color-prettylights-syntax-markup-deleted-text: #8A7265;
+  --color-prettylights-syntax-markup-deleted-bg: rgba(162,123,92,0.12);
+
+  --color-prettylights-syntax-markup-inserted-text: #A27B5C;
+  --color-prettylights-syntax-markup-inserted-bg: rgba(162,123,92,0.12);
+
+  --color-prettylights-syntax-markup-changed-text: #8A7265;
+  --color-prettylights-syntax-markup-changed-bg: rgba(162,123,92,0.12);
+
+  --color-prettylights-syntax-markup-ignored-text: #F5F4F0;
+  --color-prettylights-syntax-markup-ignored-bg: #A27B5C;
+
+  --color-prettylights-syntax-meta-diff-range: #8A7265;
+
+  --color-prettylights-syntax-brackethighlighter-angle: #6B6B6B;
+
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #ada9a2;
+
+  --color-prettylights-syntax-constant-other-reference-link: #A27B5C;
+
+  /* Buttons */
+  --color-btn-text: #6B6B6B;
+  --color-btn-bg: #F5F4F0;
+  --color-btn-border: #ada9a2;
+
+  --color-btn-hover-bg: #e2e1e1;
+  --color-btn-hover-border: #ada9a2;
+
+  --color-btn-active-bg: #e2e1e1;
+  --color-btn-active-border: #8A7265;
+
+  --color-btn-selected-bg: #e2e1e1;
+
+  --color-btn-primary-text: #F5F4F0;
+  --color-btn-primary-bg: #8A7265;
+  --color-btn-primary-hover-bg: #A27B5C;
+  --color-btn-primary-selected-bg: #A27B5C;
+
+  --color-btn-primary-disabled-text: rgba(245,244,240,.8);
+  --color-btn-primary-disabled-bg: #ada9a2;
+
+  /* Lists / Controls */
+  --color-action-list-item-default-hover-bg: rgba(162,123,92,.12);
+
+  --color-segmented-control-bg: #e2e1e1;
+  --color-segmented-control-button-bg: #F5F4F0;
+  --color-segmented-control-button-selected-border: #ada9a2;
+
+  /* Foreground */
+  --color-fg-default: #1C1C1C;
+  --color-fg-muted: #6B6B6B;
+  --color-fg-subtle: #6B6B6B;
+
+  /* Background */
+  --color-canvas-default: #F5F4F0;
+  --color-canvas-overlay: #F5F4F0;
+  --color-canvas-inset: #e2e1e1;
+  --color-canvas-subtle: #e2e1e1;
+
+  /* Borders */
+  --color-border-default: #ada9a2;
+  --color-border-muted: #e2e1e1;
+
+  --color-neutral-muted: rgba(173,169,162,.18);
+
+  /* Accent */
+  --color-accent-fg: #A27B5C;
+  --color-accent-emphasis: #A27B5C;
+  --color-accent-muted: rgba(162,123,92,.18);
+  --color-accent-subtle: rgba(162,123,92,.12);
+
+  /* Status */
+  --color-success-fg: #8A7265;
+
+  --color-attention-fg: #A27B5C;
+  --color-attention-muted: rgba(162,123,92,.18);
+  --color-attention-subtle: rgba(162,123,92,.12);
+
+  --color-danger-fg: #8A7265;
+  --color-danger-muted: rgba(138,114,101,.18);
+  --color-danger-subtle: rgba(138,114,101,.12);
+
+  --color-primer-shadow-inset:
+    inset 0 1px 0 rgba(173,169,162,.2);
+
+  --color-scale-gray-1: #e2e1e1;
+  --color-scale-blue-1: rgba(162,123,92,.12);
+
+  /* Extensions */
+  --color-social-reaction-bg-hover: var(--color-scale-gray-1);
+  --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-1);
+}
