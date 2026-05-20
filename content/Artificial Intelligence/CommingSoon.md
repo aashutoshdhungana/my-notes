@@ -1,6 +1,6 @@
 ---
 title: AI
-tag: Artificial Intelligence
+tag: AI
 ---
 
 Content comming soon
