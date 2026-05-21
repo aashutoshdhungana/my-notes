@@ -5,3 +5,25 @@
   font-size: 0.5em;
   color: var(--text-secondary);
 }
+
+.sidebar {
+  padding-top: 3rem !important;
+}
+
+.page-header {
+  margin-top: 3rem !important;
+}
+
+.explorer {
+  margin-top: -1rem !important;
+}
+
+.explorer.collapsed {
+  margin-top: auto !important;
+}
+
+@media (max-width: 768px) {
+  .title-subtext {
+    display: none;
+  }
+}
