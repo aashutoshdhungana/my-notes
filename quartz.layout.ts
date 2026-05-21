@@ -19,6 +19,7 @@ export const sharedPageComponents: SharedLayout = {
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
+    Component.MobileOnly(Component.Graph()),
     Component.ConditionalRender({
       component: Component.Breadcrumbs(),
       condition: (page) => page.fileData.slug !== "index",
@@ -33,7 +34,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Flex({
       components: [
         {
-          Component: Component.Search(),
+          Component: Component.Search({}),
           grow: true,
         },
         { Component: Component.Darkmode() },
@@ -43,13 +44,13 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer(),
   ],
   right: [
-    Component.Graph(),
+    Component.DesktopOnly(Component.Graph()),
     Component.DesktopOnly(Component.TableOfContents()),
-    Component.MobileOnly(Component.Spacer()),
-    Component.Backlinks(),
-    Component.RecentNotes({ title: "Recent Updates" }),
+    Component.DesktopOnly(Component.Backlinks()),
+    Component.DesktopOnly(Component.RecentNotes({ title: "Recent Updates" })),
   ],
   afterBody: [
+    Component.MobileOnly(Component.Backlinks()),
     Component.Comments({
       provider: "giscus",
       options: {
@@ -67,6 +68,7 @@ export const defaultContentPageLayout: PageLayout = {
         lightTheme: "light",
       },
     }),
+    Component.MobileOnly(Component.RecentNotes({ title: "Recent Updates", limit: 5 })),
   ],
 }
 
@@ -88,4 +90,5 @@ export const defaultListPageLayout: PageLayout = {
     Component.Explorer(),
   ],
   right: [],
+  afterBody: [],
 }
