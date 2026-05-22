@@ -10,8 +10,9 @@ export const sharedPageComponents: SharedLayout = {
     links: {
       Email: "mailto:dhunganaaashutosh@gmail.com",
       GitHub: "https://github.com/aashutoshdhungana",
-      RSS: "/index.xml",
       LinkedIn: "https://www.linkedin.com/in/aashutosh-dhungana-4759511a1",
+      Upwork: "https://www.upwork.com/freelancers/~011146614c401546e6",
+      RSS: "/index.xml",
     },
   }),
 }
@@ -50,7 +51,6 @@ export const defaultContentPageLayout: PageLayout = {
     Component.DesktopOnly(Component.Graph()),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.DesktopOnly(Component.Backlinks()),
-    Component.DesktopOnly(Component.RecentNotes({ title: "Recent Updates" })),
   ],
   afterBody: [
     Component.MobileOnly(Component.Backlinks()),
@@ -71,7 +71,7 @@ export const defaultContentPageLayout: PageLayout = {
         lightTheme: "light",
       },
     }),
-    Component.MobileOnly(Component.RecentNotes({ title: "Recent Updates", limit: 5 })),
+    Component.RecentNotes({ title: "Recent Updates", limit: 5, showTags: false }),
   ],
 }
 
