@@ -9,6 +9,16 @@ export type SortFn = (f1: QuartzPluginData, f2: QuartzPluginData) => number
 export function byDateAndAlphabetical(cfg: GlobalConfiguration): SortFn {
   return (f1, f2) => {
     // Sort by date/alphabetical
+    if (f1.frontmatter?.order !== undefined && f2.frontmatter?.order !== undefined) {
+      // sort ascending
+      return (f1.frontmatter.order as number) - (f2.frontmatter.order as number)
+    } else if (f1.frontmatter?.order !== undefined && f2.frontmatter?.order === undefined) {
+      // prioritize files with order
+      return -1
+    } else if (f1.frontmatter?.order === undefined && f2.frontmatter?.order !== undefined) {
+      return 1
+    }
+
     if (f1.dates && f2.dates) {
       // sort descending
       return getDate(cfg, f2)!.getTime() - getDate(cfg, f1)!.getTime()
@@ -35,6 +45,16 @@ export function byDateAndAlphabeticalFolderFirst(cfg: GlobalConfiguration): Sort
     if (!f1IsFolder && f2IsFolder) return 1
 
     // If both are folders or both are files, sort by date/alphabetical
+    if (f1.frontmatter?.order !== undefined && f2.frontmatter?.order !== undefined) {
+      // sort ascending
+      return (f1.frontmatter.order as number) - (f2.frontmatter.order as number)
+    } else if (f1.frontmatter?.order !== undefined && f2.frontmatter?.order === undefined) {
+      // prioritize files with order
+      return -1
+    } else if (f1.frontmatter?.order === undefined && f2.frontmatter?.order !== undefined) {
+      return 1
+    }
+
     if (f1.dates && f2.dates) {
       // sort descending
       return getDate(cfg, f2)!.getTime() - getDate(cfg, f1)!.getTime()

@@ -18,7 +18,7 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "notes.aashutoshdhungana.com.np",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    ignorePatterns: ["private", "templates", ".obsidian", "Projects"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
