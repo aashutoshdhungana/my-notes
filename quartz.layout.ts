@@ -1,6 +1,5 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
-
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
@@ -45,6 +44,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer({
       folderDefaultState: "open",
       folderClickBehavior: "collapse",
+      filterFn: (node) => !(node.slugSegment === "Career" || node.slugSegment === "Education"),
     }),
   ],
   right: [
@@ -94,8 +94,9 @@ export const defaultListPageLayout: PageLayout = {
     Component.Explorer({
       folderDefaultState: "open",
       folderClickBehavior: "collapse",
+      filterFn: (node) => !(node.slugSegment === "Career" || node.slugSegment === "Education"),
     }),
   ],
-  right: [],
+  right: [Component.Graph()],
   afterBody: [],
 }

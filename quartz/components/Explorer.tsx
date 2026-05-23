@@ -31,7 +31,7 @@ const defaultOptions: Options = {
   },
   sortFn: (a, b) => {
     // Sort order: folders first, then files. Sort folders and files alphabeticall
-    if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
+    if (a.isFolder && b.isFolder) {
       // numeric: true: Whether numeric collation should be used, such that "1" < "2" < "10"
       // sensitivity: "base": Only strings that differ in base letters compare as unequal. Examples: a ≠ b, a = á, a = A
       return a.displayName.localeCompare(b.displayName, undefined, {
@@ -40,6 +40,17 @@ const defaultOptions: Options = {
       })
     }
 
+    if (!a.isFolder && !b.isFolder) {
+      let orderA = a.data?.order ?? 0
+      let orderB = b.data?.order ?? 0
+      if (orderA === orderB) {
+        return a.displayName.localeCompare(b.displayName, undefined, {
+          numeric: true,
+          sensitivity: "base",
+        })
+      }
+      return orderA - orderB
+    }
     if (!a.isFolder && b.isFolder) {
       return 1
     } else {
