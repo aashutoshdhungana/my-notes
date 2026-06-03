@@ -33,10 +33,10 @@ const config: QuartzConfig = {
           light: "#FAF9F5", // Creamy linen page bg
           lightgray: "#F0EFEA", // Soft warm stone card / sidebar
           gray: "#D1CFC7", // Subtle natural borders
-          darkgray: "#5E6258", // Mossy secondary text
+          darkgray: "hsl(84, 5%, 27%)", // Mossy secondary text
           dark: "#1C1E1A", // Forest charcoal primary text
           secondary: "#4A6B53", // Heritage sage green accent
-          tertiary: "#8A8F83", // Subtle icons, placeholders
+          tertiary: "#8f9487", // Subtle icons, placeholders
           highlight: "rgba(74, 107, 83, 0.10)",
           textHighlight: "#4A6B5333",
         },
