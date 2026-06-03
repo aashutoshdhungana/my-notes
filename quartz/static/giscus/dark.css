@@ -1,124 +1,105 @@
 main {
-  /* Syntax Highlighting */
-  --color-prettylights-syntax-comment: #8a7265;
-  --color-prettylights-syntax-constant: #A27B5C;
-  --color-prettylights-syntax-entity: #DCD7C9;
-  --color-prettylights-syntax-storage-modifier-import: #DCD7C9;
-  --color-prettylights-syntax-entity-tag: #A27B5C;
-  --color-prettylights-syntax-keyword: #A27B5C;
-  --color-prettylights-syntax-string: #DCD7C9;
-  --color-prettylights-syntax-variable: #A27B5C;
+    /* Syntax Highlighting */
+    --color-prettylights-syntax-comment: #C5C7C1;                  /* darkgray (sage-tinted) */
+    --color-prettylights-syntax-constant: #81A784;                 /* secondary (soft sage) */
+    --color-prettylights-syntax-entity: #C5C7C1;                   /* darkgray */
+    --color-prettylights-syntax-storage-modifier-import: #E4E3DE;  /* dark (crisp linen) */
+    --color-prettylights-syntax-entity-tag: #81A784;               /* secondary */
+    --color-prettylights-syntax-keyword: #81A784;                  /* secondary */
+    --color-prettylights-syntax-string: #81A784;                   /* secondary */
+    --color-prettylights-syntax-variable: #C5C7C1;                 /* darkgray */
+    --color-prettylights-syntax-brackethighlighter-unmatched: #81A784;
 
-  --color-prettylights-syntax-brackethighlighter-unmatched: #c15b52;
-  --color-prettylights-syntax-invalid-illegal-text: #DCD7C9;
-  --color-prettylights-syntax-invalid-illegal-bg: #5b2c2c;
+    --color-prettylights-syntax-invalid-illegal-text: #1A1C18;     /* light */
+    --color-prettylights-syntax-invalid-illegal-bg: #3A3E36;       /* gray */
+    --color-prettylights-syntax-carriage-return-text: #1A1C18;     /* light */
+    --color-prettylights-syntax-carriage-return-bg: #81A784;       /* secondary */
+    
+    --color-prettylights-syntax-string-regexp: #81A784;
+    --color-prettylights-syntax-markup-list: #C5C7C1;
+    --color-prettylights-syntax-markup-heading: #81A784;
+    --color-prettylights-syntax-markup-italic: #E4E3DE;
+    --color-prettylights-syntax-markup-bold: #E4E3DE;
 
-  --color-prettylights-syntax-carriage-return-text: #DCD7C9;
-  --color-prettylights-syntax-carriage-return-bg: #7a3f35;
+    /* Diffs and Markups */
+    --color-prettylights-syntax-markup-deleted-text: #C5C7C1;
+    --color-prettylights-syntax-markup-deleted-bg: rgba(26, 28, 24, 0.60); /* textHighlight */
+    --color-prettylights-syntax-markup-inserted-text: #81A784;
+    --color-prettylights-syntax-markup-inserted-bg: rgba(129, 167, 132, 0.15); /* highlight */
+    --color-prettylights-syntax-markup-changed-text: #C5C7C1;
+    --color-prettylights-syntax-markup-changed-bg: rgba(129, 167, 132, 0.15);
+    --color-prettylights-syntax-markup-ignored-text: #1A1C18;
+    --color-prettylights-syntax-markup-ignored-bg: #81A784;
+    --color-prettylights-syntax-meta-diff-range: #3A3E36;
+    --color-prettylights-syntax-brackethighlighter-angle: #C5C7C1;
+    --color-prettylights-syntax-sublimelinter-gutter-mark: #3A3E36;
+    --color-prettylights-syntax-constant-other-reference-link: #81A784;
 
-  --color-prettylights-syntax-string-regexp: #A27B5C;
-  --color-prettylights-syntax-markup-list: #c2a27e;
-  --color-prettylights-syntax-markup-heading: #A27B5C;
-  --color-prettylights-syntax-markup-italic: #DCD7C9;
-  --color-prettylights-syntax-markup-bold: #DCD7C9;
+    /* Standard UI Buttons */
+    --color-btn-text: #C5C7C1;                                     /* darkgray */
+    --color-btn-bg: #1A1C18;                                       /* light */
+    --color-btn-border: #3A3E36;                                   /* gray */
+    --color-btn-hover-bg: #232621;                                 /* lightgray */
+    --color-btn-hover-border: #3A3E36;
+    --color-btn-active-bg: #232621;
+    --color-btn-active-border: #C5C7C1;
+    --color-btn-selected-bg: #232621;
 
-  --color-prettylights-syntax-markup-deleted-text: #dcb7b0;
-  --color-prettylights-syntax-markup-deleted-bg: #4f2622;
+    /* Primary Accent Buttons */
+    --color-btn-primary-text: #1A1C18;                             /* light */
+    --color-btn-primary-bg: #81A784;                               /* secondary */
+    --color-btn-primary-hover-bg: #C5C7C1;                         /* darkgray */
+    --color-btn-primary-selected-bg: #C5C7C1;
+    --color-btn-primary-disabled-text: rgba(26, 28, 24, 0.8);
+    --color-btn-primary-disabled-bg: #3A3E36;                      /* gray */
 
-  --color-prettylights-syntax-markup-inserted-text: #DCD7C9;
-  --color-prettylights-syntax-markup-inserted-bg: #3F4E4F;
+    /* Lists / Segmented Controls */
+    --color-action-list-item-default-hover-bg: rgba(129, 167, 132, 0.15); /* highlight */
+    --color-segmented-control-bg: #232621;                         /* lightgray */
+    --color-segmented-control-button-bg: #1A1C18;                  /* light */
+    --color-segmented-control-button-selected-border: #3A3E36;     /* gray */
 
-  --color-prettylights-syntax-markup-changed-text: #d7b596;
-  --color-prettylights-syntax-markup-changed-bg: #6b4f3b;
+    /* Foreground Content */
+    --color-fg-default: #E4E3DE;                                   /* dark */
+    --color-fg-muted: #C5C7C1;                                     /* darkgray */
+    --color-fg-subtle: #C5C7C1;                                    /* darkgray */
 
-  --color-prettylights-syntax-markup-ignored-text: #DCD7C9;
-  --color-prettylights-syntax-markup-ignored-bg: #A27B5C;
+    /* Background Layout Layers */
+    --color-canvas-default: #1A1C18;                               /* light */
+    --color-canvas-overlay: #1A1C18;                               /* light */
+    --color-canvas-inset: #232621;                                 /* lightgray */
+    --color-canvas-subtle: #232621;                                /* lightgray */
 
-  --color-prettylights-syntax-meta-diff-range: #A27B5C;
-  --color-prettylights-syntax-brackethighlighter-angle: #8a7265;
-  --color-prettylights-syntax-sublimelinter-gutter-mark: #3F4E4F;
-  --color-prettylights-syntax-constant-other-reference-link: #A27B5C;
+    /* Borders */
+    --color-border-default: #3A3E36;                               /* gray */
+    --color-border-muted: #232621;                                 /* lightgray */
+    --color-neutral-muted: rgba(58, 62, 54, 0.18);
 
-  /* Buttons */
-  --color-btn-text: #DCD7C9;
-  --color-btn-bg: #2C3639;
-  --color-btn-border: rgb(220 215 201 / 10%);
+    /* Accent */
+    --color-accent-fg: #81A784;                                    /* secondary */
+    --color-accent-emphasis: #81A784;                              /* secondary */
+    --color-accent-muted: rgba(129, 167, 132, 0.15);               /* highlight */
+    --color-accent-subtle: rgba(26, 28, 24, 0.60);                 /* textHighlight */
 
-  --color-btn-hover-bg: #3F4E4F;
-  --color-btn-hover-border: #8a7265;
+    /* System Semantics mapped to theme standard */
+    --color-success-fg: #81A784;
+    --color-attention-fg: #81A784;
+    --color-attention-muted: rgba(129, 167, 132, 0.15);
+    --color-attention-subtle: rgba(26, 28, 24, 0.60);
+    --color-danger-fg: #C5C7C1;
+    --color-danger-muted: rgba(197, 199, 193, 0.18);
+    --color-danger-subtle: rgba(197, 199, 193, 0.12);
 
-  --color-btn-active-bg: #354447;
-  --color-btn-active-border: #8a7265;
+    --color-primer-shadow-inset: inset 0 1px 0 rgba(58, 62, 54, 0.2);
+    --color-scale-gray-1: #232621;
+    --color-scale-blue-1: rgba(129, 167, 132, 0.15);
+  }
 
-  --color-btn-selected-bg: #3F4E4F;
-
-  --color-btn-primary-text: #fff;
-  --color-btn-primary-bg: #3F4E4F;
-  --color-btn-primary-border: rgb(220 215 201 / 10%);
-
-  --color-btn-primary-hover-bg: #A27B5C;
-  --color-btn-primary-hover-border: rgb(220 215 201 / 10%);
-
-  --color-btn-primary-selected-bg: #A27B5C;
-
-  --color-btn-primary-disabled-text: rgba(220, 215, 201, 0.4);
-  --color-btn-primary-disabled-bg: rgba(63, 78, 79, 0.6);
-
-  /* Lists / Controls */
-  --color-action-list-item-default-hover-bg: rgba(162, 123, 92, 0.15);
-
-  --color-segmented-control-bg: rgba(63, 78, 79, 0.3);
-  --color-segmented-control-button-bg: #2C3639;
-  --color-segmented-control-button-selected-border: #8a7265;
-
-  /* Foreground */
-  --color-fg-default: #DCD7C9;
-  --color-fg-muted: #DCD7C9;
-  --color-fg-subtle: #8a7265;
-
-  /* Background */
-  --color-canvas-default: #2C3639;
-  --color-canvas-overlay: #3F4E4F;
-  --color-canvas-inset: #222a2c;
-  --color-canvas-subtle: #3F4E4F;
-
-  /* Borders */
-  --color-border-default: #3F4E4F;
-  --color-border-muted: rgba(220, 215, 201, 0.08);
-
-  /* Accent */
-  --color-neutral-muted: rgba(138, 114, 101, 0.4);
-
-  --color-accent-fg: #A27B5C;
-  --color-accent-emphasis: #A27B5C;
-  --color-accent-muted: rgba(162, 123, 92, 0.4);
-  --color-accent-subtle: rgba(162, 123, 92, 0.15);
-
-  /* States */
-  --color-success-fg: #7ea58a;
-
-  --color-attention-fg: #c7a173;
-  --color-attention-muted: rgba(199, 161, 115, 0.4);
-  --color-attention-subtle: rgba(199, 161, 115, 0.15);
-
-  --color-danger-fg: #d4746a;
-  --color-danger-muted: rgba(212, 116, 106, 0.4);
-  --color-danger-subtle: rgba(212, 116, 106, 0.15);
-
-  --color-primer-shadow-inset: 0 0 transparent;
-
-  --color-scale-gray-7: #3F4E4F;
-  --color-scale-blue-8: #A27B5C;
-
-  /* Extensions */
-  --color-social-reaction-bg-hover: var(--color-scale-gray-7);
-  --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-8);
-}
-
+  /* Base Asset Assets remain untouched */
 main .pagination-loader-container {
-  background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line-dark.svg");
+  background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line.svg");
 }
 
 main .gsc-loading-image {
-  background-image: url("https://github.githubassets.com/images/mona-loading-dark.gif");
+  background-image: url("https://github.githubassets.com/images/mona-loading-default.gif");
 }

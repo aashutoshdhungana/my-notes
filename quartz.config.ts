@@ -30,26 +30,26 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#F5F4F0", // warm off-white page bg
-          lightgray: "#e2e1e1", // card / sidebar surface
-          gray: "#ada9a2", // borders, dividers
-          darkgray: "#6B6B6B", // muted / secondary text
-          dark: "#1C1C1C", // primary body text
-          secondary: "#A27B5C", // accent — same as dark mode
-          tertiary: "#8A7265", // subtle icons, placeholders
-          highlight: "rgba(162, 123, 92, 0.12)",
-          textHighlight: "#A27B5C55",
+          light: "#FAF9F5", // Creamy linen page bg
+          lightgray: "#F0EFEA", // Soft warm stone card / sidebar
+          gray: "#D1CFC7", // Subtle natural borders
+          darkgray: "#5E6258", // Mossy secondary text
+          dark: "#1C1E1A", // Forest charcoal primary text
+          secondary: "#4A6B53", // Heritage sage green accent
+          tertiary: "#8A8F83", // Subtle icons, placeholders
+          highlight: "rgba(74, 107, 83, 0.10)",
+          textHighlight: "#4A6B5333",
         },
         darkMode: {
-          light: "#2C3639", // deepest bg (was #161618)
-          lightgray: "#3F4E4F", // surface / sidebar (was #393639)
-          gray: "#8a7265", // mid-tone dividers (was #646464)
-          darkgray: "#DCD7C9", // secondary text (was #d4d4d4)
-          dark: "#DCD7C9", // primary text (was #ebebec)
-          secondary: "#A27B5C", // accent / links (was #7b97aa)
-          tertiary: "#3F4E4F", // subtle surface alt (was #84a59d)
-          highlight: "rgba(162, 123, 92, 0.15)", // warm sand glow
-          textHighlight: "rgba(44, 54, 57, 0.60)", // forest-toned mark
+          light: "#1A1C18", // Dark moss bg
+          lightgray: "#232621", // Elevated surface / sidebar
+          gray: "#3A3E36", // Earthy mid-tone dividers
+          darkgray: "#C5C7C1", // Sage-tinted secondary text
+          dark: "#E4E3DE", // Crisp linen primary text
+          secondary: "#81A784", // Soft sage accent / links
+          tertiary: "#868d7c", // Subtle surface alt
+          highlight: "rgba(129, 167, 132, 0.15)",
+          textHighlight: "rgba(26, 28, 24, 0.60)",
         },
       },
     },
