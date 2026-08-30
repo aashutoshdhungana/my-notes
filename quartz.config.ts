@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Scarpyard by Aashutosh Dhungana || A Personal Note Collection",
+    pageTitle: "ScratchPad || My Personal Note Garden",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
