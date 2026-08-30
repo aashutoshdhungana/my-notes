@@ -1,6 +1,7 @@
 ---
 title: BSc. CSIT, Amrit Campus, Tribhuvan University, 2018 - 2023
 tag: Me, Education
+draft: true
 ---
 
 I’ve always loved computers, but not for programming, at least not in the beginning. For me, it was all about playing video games. One of my most cherished childhood memories is the day I got my first new computer. Ever since then, computers have fascinated me. I used to stare at that box of metal and plastic, wondering in awe how it could possibly bring entire game worlds to life.

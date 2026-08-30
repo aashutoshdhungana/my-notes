@@ -1,6 +1,7 @@
 ---
 title: Solvability of N-Puzzle Problem
 order: 2
+draft: true
 ---
 
 In a N-puzzle problem with N+1 tiles, there are **(N+1)!** different ways the numbers can be arranged initially. Out of all initial states, not every configuration is solvable. The solvability of a N-Puzzle problem depends on the size of the grid i.e $ \sqrt{N+1} $ and the number of inversions in the grid.
@@ -88,5 +89,5 @@ Searching thorough such a big amount of states is not feasible with a brute forc
 
 <div style="margin-top: 40px; display: flex; justify-content: space-between;">
   <a href="./Introduction" style="background-color: var(--secondary); color: var(--lightgray); padding: 10px 10px; border-radius: 6px; text-decoration: none; font-weight: bold;">Previous: Introduction</a>
-   <a href="./Encode" style="background-color: var(--secondary); color: var(--lightgray); padding: 10px 10px; border-radius: 6px; text-decoration: none; font-weight: bold;">Next: Encoding N-Puzzle Problem</a>
+   <a href="./Encode" style="background-color: var(--secondary); color: var(--lightgray); padding: 10px 10px; border-radius: 6px; text-decoration: none; font-weight: bold;">Next: Encoding N-Puzzle Problem for search</a>
 </div>

@@ -2,6 +2,7 @@
 title: Software Engineer at Spiralogics, April 2023 – Sept 2025
 tag: Career, Me
 order: 1
+draft: true
 ---
 
 When I joined Spiralogics, I was at a point where I still relied on a senior engineer to map out my next steps and keep me aligned. Over the next two and a half years, that dynamic completely flipped. I shifted from executing someone else's plan to owning the plan myself—leading calls, breaking down messy requirements, and running projects independently. I also started mentoring juniors, which really forced me to sharpen my own approach. Toward the end, my role naturally leaned into R&D, where I became the person responsible for researching and prototyping how we could bring modern AI into our applications.
