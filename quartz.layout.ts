@@ -19,7 +19,6 @@ export const sharedPageComponents: SharedLayout = {
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
-    Component.MobileOnly(Component.Graph()),
     Component.ConditionalRender({
       component: Component.Breadcrumbs(),
       condition: (page) => page.fileData.slug !== "index",
@@ -27,33 +26,58 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
+    Component.TableOfContents(),
   ],
   left: [
+    Component.DesktopOnly(Component.PageImage()),
+    Component.MobileOnly(
+      Component.Explorer({
+        folderDefaultState: "open",
+        folderClickBehavior: "collapse",
+        filterFn: (node) => !(node.slugSegment === "Career" || node.slugSegment === "Education"),
+      }),
+    ),
     Component.PageTitle(),
-    Component.MobileOnly(Component.Spacer()),
-    Component.Flex({
-      components: [
-        {
-          Component: Component.Search({}),
-          grow: true,
-        },
-        { Component: Component.Darkmode() },
-        { Component: Component.ReaderMode() },
-      ],
-    }),
-    Component.Explorer({
-      folderDefaultState: "open",
-      folderClickBehavior: "collapse",
-      filterFn: (node) => !(node.slugSegment === "Career" || node.slugSegment === "Education"),
-    }),
+    Component.MobileOnly(
+      Component.Flex({
+        components: [
+          {
+            Component: Component.Search({}),
+            grow: true,
+          },
+          { Component: Component.Darkmode() },
+          { Component: Component.ReaderMode() },
+        ],
+      }),
+    ),
+    Component.DesktopOnly(
+      Component.RecentNotes({ title: "Recent Updates", limit: 5, showTags: false }),
+    ),
   ],
   right: [
+    Component.DesktopOnly(
+      Component.Flex({
+        components: [
+          {
+            Component: Component.Search({}),
+            grow: true,
+          },
+          { Component: Component.Darkmode() },
+          { Component: Component.ReaderMode() },
+        ],
+      }),
+    ),
     Component.DesktopOnly(Component.Graph()),
-    Component.DesktopOnly(Component.TableOfContents()),
-    Component.DesktopOnly(Component.Backlinks()),
+    Component.DesktopOnly(
+      Component.Explorer({
+        folderDefaultState: "open",
+        folderClickBehavior: "collapse",
+        filterFn: (node) => !(node.slugSegment === "Career" || node.slugSegment === "Education"),
+      }),
+    ),
   ],
   afterBody: [
-    Component.MobileOnly(Component.Backlinks()),
+    Component.Backlinks(),
     Component.Comments({
       provider: "giscus",
       options: {
@@ -71,7 +95,9 @@ export const defaultContentPageLayout: PageLayout = {
         lightTheme: "light",
       },
     }),
-    Component.RecentNotes({ title: "Recent Updates", limit: 5, showTags: false }),
+    Component.MobileOnly(
+      Component.RecentNotes({ title: "Recent Updates", limit: 5, showTags: false }),
+    ),
   ],
 }
 

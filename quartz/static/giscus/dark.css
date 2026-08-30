@@ -1,101 +1,101 @@
 main {
-    /* Syntax Highlighting */
-    --color-prettylights-syntax-comment: #C5C7C1;                  /* darkgray (sage-tinted) */
-    --color-prettylights-syntax-constant: #81A784;                 /* secondary (soft sage) */
-    --color-prettylights-syntax-entity: #C5C7C1;                   /* darkgray */
-    --color-prettylights-syntax-storage-modifier-import: #E4E3DE;  /* dark (crisp linen) */
-    --color-prettylights-syntax-entity-tag: #81A784;               /* secondary */
-    --color-prettylights-syntax-keyword: #81A784;                  /* secondary */
-    --color-prettylights-syntax-string: #81A784;                   /* secondary */
-    --color-prettylights-syntax-variable: #C5C7C1;                 /* darkgray */
-    --color-prettylights-syntax-brackethighlighter-unmatched: #81A784;
+  /* Syntax Highlighting */
+  --color-prettylights-syntax-comment: #6c7086; /* overlay0 */
+  --color-prettylights-syntax-constant: #cba6f7; /* mauve */
+  --color-prettylights-syntax-entity: #89b4fa; /* blue */
+  --color-prettylights-syntax-storage-modifier-import: #cdd6f4; /* text */
+  --color-prettylights-syntax-entity-tag: #94e2d5; /* teal */
+  --color-prettylights-syntax-keyword: #cba6f7; /* mauve */
+  --color-prettylights-syntax-string: #a6e3a1; /* green */
+  --color-prettylights-syntax-variable: #fab387; /* peach */
+  --color-prettylights-syntax-brackethighlighter-unmatched: #f38ba8; /* red */
 
-    --color-prettylights-syntax-invalid-illegal-text: #1A1C18;     /* light */
-    --color-prettylights-syntax-invalid-illegal-bg: #3A3E36;       /* gray */
-    --color-prettylights-syntax-carriage-return-text: #1A1C18;     /* light */
-    --color-prettylights-syntax-carriage-return-bg: #81A784;       /* secondary */
-    
-    --color-prettylights-syntax-string-regexp: #81A784;
-    --color-prettylights-syntax-markup-list: #C5C7C1;
-    --color-prettylights-syntax-markup-heading: #81A784;
-    --color-prettylights-syntax-markup-italic: #E4E3DE;
-    --color-prettylights-syntax-markup-bold: #E4E3DE;
+  --color-prettylights-syntax-invalid-illegal-text: #1e1e2e; /* base */
+  --color-prettylights-syntax-invalid-illegal-bg: #f38ba8; /* red */
+  --color-prettylights-syntax-carriage-return-text: #1e1e2e; /* base */
+  --color-prettylights-syntax-carriage-return-bg: #f38ba8; /* red */
 
-    /* Diffs and Markups */
-    --color-prettylights-syntax-markup-deleted-text: #C5C7C1;
-    --color-prettylights-syntax-markup-deleted-bg: rgba(26, 28, 24, 0.60); /* textHighlight */
-    --color-prettylights-syntax-markup-inserted-text: #81A784;
-    --color-prettylights-syntax-markup-inserted-bg: rgba(129, 167, 132, 0.15); /* highlight */
-    --color-prettylights-syntax-markup-changed-text: #C5C7C1;
-    --color-prettylights-syntax-markup-changed-bg: rgba(129, 167, 132, 0.15);
-    --color-prettylights-syntax-markup-ignored-text: #1A1C18;
-    --color-prettylights-syntax-markup-ignored-bg: #81A784;
-    --color-prettylights-syntax-meta-diff-range: #3A3E36;
-    --color-prettylights-syntax-brackethighlighter-angle: #C5C7C1;
-    --color-prettylights-syntax-sublimelinter-gutter-mark: #3A3E36;
-    --color-prettylights-syntax-constant-other-reference-link: #81A784;
+  --color-prettylights-syntax-string-regexp: #f5c2e7; /* pink */
+  --color-prettylights-syntax-markup-list: #fab387; /* peach */
+  --color-prettylights-syntax-markup-heading: #89b4fa; /* blue */
+  --color-prettylights-syntax-markup-italic: #cdd6f4; /* text */
+  --color-prettylights-syntax-markup-bold: #cdd6f4; /* text */
 
-    /* Standard UI Buttons */
-    --color-btn-text: #C5C7C1;                                     /* darkgray */
-    --color-btn-bg: #1A1C18;                                       /* light */
-    --color-btn-border: #3A3E36;                                   /* gray */
-    --color-btn-hover-bg: #232621;                                 /* lightgray */
-    --color-btn-hover-border: #3A3E36;
-    --color-btn-active-bg: #232621;
-    --color-btn-active-border: #C5C7C1;
-    --color-btn-selected-bg: #232621;
+  /* Diffs and Markups */
+  --color-prettylights-syntax-markup-deleted-text: #f38ba8;
+  --color-prettylights-syntax-markup-deleted-bg: rgba(243, 139, 168, 0.15);
+  --color-prettylights-syntax-markup-inserted-text: #a6e3a1;
+  --color-prettylights-syntax-markup-inserted-bg: rgba(166, 227, 161, 0.15);
+  --color-prettylights-syntax-markup-changed-text: #f9e2af;
+  --color-prettylights-syntax-markup-changed-bg: rgba(249, 226, 175, 0.15);
+  --color-prettylights-syntax-markup-ignored-text: #1e1e2e;
+  --color-prettylights-syntax-markup-ignored-bg: #7f849c;
+  --color-prettylights-syntax-meta-diff-range: #cba6f7;
+  --color-prettylights-syntax-brackethighlighter-angle: #a6adc8;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #585b70;
+  --color-prettylights-syntax-constant-other-reference-link: #89dceb;
 
-    /* Primary Accent Buttons */
-    --color-btn-primary-text: #1A1C18;                             /* light */
-    --color-btn-primary-bg: #81A784;                               /* secondary */
-    --color-btn-primary-hover-bg: #C5C7C1;                         /* darkgray */
-    --color-btn-primary-selected-bg: #C5C7C1;
-    --color-btn-primary-disabled-text: rgba(26, 28, 24, 0.8);
-    --color-btn-primary-disabled-bg: #3A3E36;                      /* gray */
+  /* Standard UI Buttons */
+  --color-btn-text: #cdd6f4; /* text */
+  --color-btn-bg: #313244; /* surface0 */
+  --color-btn-border: #45475a; /* surface1 */
+  --color-btn-hover-bg: #45475a; /* surface1 */
+  --color-btn-hover-border: #585b70; /* surface2 */
+  --color-btn-active-bg: #45475a;
+  --color-btn-active-border: #6c7086;
+  --color-btn-selected-bg: #45475a;
 
-    /* Lists / Segmented Controls */
-    --color-action-list-item-default-hover-bg: rgba(129, 167, 132, 0.15); /* highlight */
-    --color-segmented-control-bg: #232621;                         /* lightgray */
-    --color-segmented-control-button-bg: #1A1C18;                  /* light */
-    --color-segmented-control-button-selected-border: #3A3E36;     /* gray */
+  /* Primary Accent Buttons */
+  --color-btn-primary-text: #1e1e2e; /* base */
+  --color-btn-primary-bg: #cba6f7; /* mauve */
+  --color-btn-primary-hover-bg: #b4befe; /* lavender */
+  --color-btn-primary-selected-bg: #b4befe;
+  --color-btn-primary-disabled-text: rgba(30, 30, 46, 0.8);
+  --color-btn-primary-disabled-bg: #585b70; /* surface2 */
 
-    /* Foreground Content */
-    --color-fg-default: #E4E3DE;                                   /* dark */
-    --color-fg-muted: #C5C7C1;                                     /* darkgray */
-    --color-fg-subtle: #C5C7C1;                                    /* darkgray */
+  /* Lists / Segmented Controls */
+  --color-action-list-item-default-hover-bg: rgba(203, 166, 247, 0.15); /* mauve */
+  --color-segmented-control-bg: #313244; /* surface0 */
+  --color-segmented-control-button-bg: #1e1e2e; /* base */
+  --color-segmented-control-button-selected-border: #45475a; /* surface1 */
 
-    /* Background Layout Layers */
-    --color-canvas-default: #1A1C18;                               /* light */
-    --color-canvas-overlay: #1A1C18;                               /* light */
-    --color-canvas-inset: #232621;                                 /* lightgray */
-    --color-canvas-subtle: #232621;                                /* lightgray */
+  /* Foreground Content */
+  --color-fg-default: #cdd6f4; /* text */
+  --color-fg-muted: #a6adc8; /* subtext0 */
+  --color-fg-subtle: #9399b2; /* overlay2 */
 
-    /* Borders */
-    --color-border-default: #3A3E36;                               /* gray */
-    --color-border-muted: #232621;                                 /* lightgray */
-    --color-neutral-muted: rgba(58, 62, 54, 0.18);
+  /* Background Layout Layers */
+  --color-canvas-default: #1e1e2e; /* base */
+  --color-canvas-overlay: #1e1e2e; /* base */
+  --color-canvas-inset: #181825; /* mantle */
+  --color-canvas-subtle: #313244; /* surface0 */
 
-    /* Accent */
-    --color-accent-fg: #81A784;                                    /* secondary */
-    --color-accent-emphasis: #81A784;                              /* secondary */
-    --color-accent-muted: rgba(129, 167, 132, 0.15);               /* highlight */
-    --color-accent-subtle: rgba(26, 28, 24, 0.60);                 /* textHighlight */
+  /* Borders */
+  --color-border-default: #45475a; /* surface1 */
+  --color-border-muted: #313244; /* surface0 */
+  --color-neutral-muted: rgba(69, 71, 90, 0.18);
 
-    /* System Semantics mapped to theme standard */
-    --color-success-fg: #81A784;
-    --color-attention-fg: #81A784;
-    --color-attention-muted: rgba(129, 167, 132, 0.15);
-    --color-attention-subtle: rgba(26, 28, 24, 0.60);
-    --color-danger-fg: #C5C7C1;
-    --color-danger-muted: rgba(197, 199, 193, 0.18);
-    --color-danger-subtle: rgba(197, 199, 193, 0.12);
+  /* Accent */
+  --color-accent-fg: #cba6f7; /* mauve */
+  --color-accent-emphasis: #cba6f7; /* mauve */
+  --color-accent-muted: rgba(203, 166, 247, 0.15);
+  --color-accent-subtle: rgba(30, 30, 46, 0.6);
 
-    --color-primer-shadow-inset: inset 0 1px 0 rgba(58, 62, 54, 0.2);
-    --color-scale-gray-1: #232621;
-    --color-scale-blue-1: rgba(129, 167, 132, 0.15);
-  }
+  /* System Semantics mapped to theme standard */
+  --color-success-fg: #a6e3a1; /* green */
+  --color-attention-fg: #f9e2af; /* yellow */
+  --color-attention-muted: rgba(249, 226, 175, 0.15);
+  --color-attention-subtle: rgba(30, 30, 46, 0.6);
+  --color-danger-fg: #f38ba8; /* red */
+  --color-danger-muted: rgba(243, 139, 168, 0.18);
+  --color-danger-subtle: rgba(243, 139, 168, 0.12);
 
-  /* Base Asset Assets remain untouched */
+  --color-primer-shadow-inset: inset 0 1px 0 rgba(69, 71, 90, 0.2);
+  --color-scale-gray-1: #313244;
+  --color-scale-blue-1: rgba(203, 166, 247, 0.15);
+}
+
+/* Base Asset Assets remain untouched */
 main .pagination-loader-container {
   background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line.svg");
 }

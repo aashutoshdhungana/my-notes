@@ -1,6 +1,12 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+.title-first {
+  display: none;
+}
+.title-full {
+  display: block;
+}
 .title-subtext {
   font-size: 0.5em;
   color: var(--text-secondary);
@@ -25,6 +31,16 @@
 @media (max-width: 768px) {
   .title-subtext {
     display: none;
+  }
+  .title-first {
+    display: block;
+  }
+  .title-full {
+    display: none;
+  }
+  .page-title {
+    display: flex;
+    align-items: center;
   }
 }
 

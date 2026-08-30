@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Garden by Aashutosh Dhungana",
+    pageTitle: "Scarpyard by Aashutosh Dhungana || A Personal Note Collection",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -17,7 +17,7 @@ const config: QuartzConfig = {
       tagId: "G-0XHTP7MGYB",
     },
     locale: "en-US",
-    baseUrl: "notes.aashutoshdhungana.com.np",
+    baseUrl: "aashutoshdhungana.com.np",
     ignorePatterns: ["private", "templates", ".obsidian", "Projects"],
     defaultDateType: "modified",
     theme: {
