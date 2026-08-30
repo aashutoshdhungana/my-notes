@@ -1,6 +1,7 @@
 ---
 title: Introduction
 order: 1
+draft: true
 ---
 
 I recently had to take an exam for an Artificial Intelligence class that required studying search agents. Since I had already covered this topic during my Bachelor's degree, I was struggling to find the motivation to study. To make things interesting, I decided to implement those search algorithms to solve the N-puzzle problem.

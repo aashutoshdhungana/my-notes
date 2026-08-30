@@ -8,8 +8,8 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "आशुतोषको संग्रह||Aashutosh's Collection",
-    pageTitleSuffix: " | Aashutosh's Collection",
+    pageTitle: "Garden by Aashutosh Dhungana",
+    pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
@@ -21,35 +21,35 @@ const config: QuartzConfig = {
     ignorePatterns: ["private", "templates", ".obsidian", "Projects"],
     defaultDateType: "modified",
     theme: {
-      fontOrigin: "googleFonts",
       cdnCaching: true,
+      fontOrigin: "googleFonts",
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header: "JetBrains Mono",
+        body: "JetBrains Mono",
+        code: "JetBrains Mono",
       },
       colors: {
         lightMode: {
-          light: "#FAF9F5", // Creamy linen page bg
-          lightgray: "#F0EFEA", // Soft warm stone card / sidebar
-          gray: "#D1CFC7", // Subtle natural borders
-          darkgray: "hsl(84, 5%, 27%)", // Mossy secondary text
-          dark: "#1C1E1A", // Forest charcoal primary text
-          secondary: "#4A6B53", // Heritage sage green accent
-          tertiary: "#8f9487", // Subtle icons, placeholders
-          highlight: "rgba(74, 107, 83, 0.10)",
-          textHighlight: "#4A6B5333",
+          light: "#eff1f5", // base (Latte)
+          lightgray: "#ccd0da", // surface0
+          gray: "#9ca0b0", // overlay0
+          darkgray: "#4c4f69", // text
+          dark: "#4c4f69", // text
+          secondary: "#1e66f5", // blue
+          tertiary: "#8839ef", // mauve
+          highlight: "rgba(30,102,245,0.15)",
+          textHighlight: "#fff23688",
         },
         darkMode: {
-          light: "#1A1C18", // Dark moss bg
-          lightgray: "#232621", // Elevated surface / sidebar
-          gray: "#3A3E36", // Earthy mid-tone dividers
-          darkgray: "#C5C7C1", // Sage-tinted secondary text
-          dark: "#E4E3DE", // Crisp linen primary text
-          secondary: "#81A784", // Soft sage accent / links
-          tertiary: "#868d7c", // Subtle surface alt
-          highlight: "rgba(129, 167, 132, 0.15)",
-          textHighlight: "rgba(26, 28, 24, 0.60)",
+          light: "#1e1e2e", // base (Mocha)
+          lightgray: "#313244", // surface0
+          gray: "#6c7086", // overlay0
+          darkgray: "#cdd6f4", // text
+          dark: "#cdd6f4", // text
+          secondary: "#89b4fa", // blue
+          tertiary: "#cba6f7", // mauve
+          highlight: "rgba(137,180,250,0.15)",
+          textHighlight: "#f9e2af88",
         },
       },
     },

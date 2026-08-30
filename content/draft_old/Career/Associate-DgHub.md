@@ -2,6 +2,7 @@
 title: Associate Software Engineer at DgHub, July 2022 – March 2023
 tag: Career, Me
 order: 2
+draft: true
 ---
 
 I began my professional journey at DgHub, a fintech company, where I built and optimized core backend systems for digital wallet applications. My responsibilities included developing robust APIs for a mobile wallet, building an MVC platform for merchants, and integrating third-party SOAP APIs for payment services. Additionally, I contributed to modernizing our ecosystem by migrating legacy ASP.NET applications to .NET 6.

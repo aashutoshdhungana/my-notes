@@ -2,6 +2,7 @@
 title: About Me
 tag: Me
 comments: false
+draft: true
 ---
 
 ## Education
