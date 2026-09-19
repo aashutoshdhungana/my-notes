@@ -1,11 +1,18 @@
+# Stage 1: Build the static Quartz files
 FROM node:22-slim AS builder
 WORKDIR /usr/src/app
-COPY package.json .
-COPY package-lock.json* .
+
+COPY package.json package-lock.json* ./
 RUN npm ci
 
-FROM node:22-slim
-WORKDIR /usr/src/app
-COPY --from=builder /usr/src/app/ /usr/src/app/
 COPY . .
-CMD ["npx", "quartz", "build", "--serve"]
+# Generates static HTML/CSS/JS files in the /usr/src/app/public directory
+RUN npx quartz build
+
+# Stage 2: Serve static files with lightweight Nginx
+FROM nginx:alpine
+# Copy the built static files from Stage 1 into Nginx's web root
+COPY --from=builder /usr/src/app/public /usr/share/nginx/html
+
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
