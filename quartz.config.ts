@@ -17,7 +17,7 @@ const config: QuartzConfig = {
       tagId: "G-0XHTP7MGYB",
     },
     locale: "en-US",
-    baseUrl: "aashutoshdhungana.com.np",
+    baseUrl: "notes.aashutoshdhungana.com.np",
     ignorePatterns: ["private", "templates", ".obsidian", "Projects"],
     defaultDateType: "modified",
     theme: {
